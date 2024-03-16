@@ -23,7 +23,7 @@ if (!(argEnv in RUN_ENV_MAP)) {
 module.exports = {
   apps: [
     {
-      name: "you-nextjs-appname",
+      name: "NEXTJS-ADMIN",
       script: "node_modules/next/dist/bin/next",
       args: "start -p 4000",
       instances: RUN_ENV_MAP[argEnv].instances,
