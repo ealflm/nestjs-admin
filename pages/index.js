@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>🐔 ADMIN PAGE</title>
+        <title>ADMIN PAGE 🐔</title>
       </Head>
 
       <main>
