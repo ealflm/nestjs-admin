@@ -41,4 +41,20 @@ module.exports = {
       },
     },
   ],
+  deploy: {
+    production: {
+      user: "root",
+      host: "14.225.217.51",
+      key: "deploy.key",
+      ssh_options: "StrictHostKeyChecking=no",
+      ref: "origin/main",
+      repo: "https://github.com/ealflm/nextjs-admin",
+      path: "/root/app/nextjs-admin",
+      "post-deploy": "npm run deploy:prod",
+      env: {
+        NODE_ENV: "production",
+        DATABASE_ADDRESS: process.env.DATABASE_ADDRESS,
+      },
+    },
+  },
 };
